@@ -16,7 +16,7 @@ const AnimalList = ()=>{
 
 return (
     <div className="container-cards">
-     {animals.map(animal => <AnimalCard name={animal.name} breed={animal.breed}/>)}
+     {animals.map(animal => <AnimalCard key={animal.id}animal={animal}/>)}
     </div>
   );
 

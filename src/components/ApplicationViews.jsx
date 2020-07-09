@@ -3,9 +3,9 @@ import React from "react";
 import Home from "./home/Home";
 import AnimalList from "./animal/AnimalList";
 //only include these once they are built - previous practice exercise
-import LocationCard from "./Location/LocationCard";
-import EmployeeCard from "./Employee/EmployeeCard";
-import OwnerCard from "./Owner/OwnerCard";
+import LocationList from "./Location/LocationList";
+import EmployeeList from "./Employee/EmployeeList";
+import OwnerList from "./Owner/OwnerList";
 
 const ApplicationViews = () => {
   return (
@@ -21,17 +21,17 @@ const ApplicationViews = () => {
         exact
         path="/animals"
         render={props => {
-          return <AnimalList />;
+          return <AnimalList props={props}/>;
         }}
       />
       <Route
       exact 
       path="/location"
       render={props =>{
-        return <LocationCard/>}}
+        return <LocationList/>}}
         />
-        <Route exact path="/employee" render={props=><EmployeeCard/>}/>
-        <Route exact path="/owner" render={props=><OwnerCard/>}/>
+        <Route exact path="/employee" render={props=><EmployeeList/>}/>
+        <Route exact path="/owner" render={props=><OwnerList/>}/>
         
     </>
   );

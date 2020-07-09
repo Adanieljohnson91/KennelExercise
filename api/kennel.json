@@ -1,7 +1,80 @@
 {
-    "animals": [
-        { "id": 1, "name": "Doodles", "breed": "Poodle"},
-        { "id": 2, "name": "Decker", "breed": "German Shepherd" },
-        { "id": 3, "name": "Esme", "breed": "Pitbull" }
-    ]
+  "animals": [
+    {
+      "id": 1,
+      "name": "Doodles",
+      "breed": "Poodle"
+    },
+    {
+      "id": 2,
+      "name": "Decker",
+      "breed": "German Shepherd"
+    },
+    {
+      "id": 3,
+      "name": "Esme",
+      "breed": "Pitbull"
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "name": "Jim",
+      "job": "Stocker"
+    },
+    {
+      "id": 2,
+      "name": "Bob",
+      "job": "Cashier"
+    },
+    {
+      "id": 3,
+      "name": "Shelly",
+      "job": "Manager"
+    }
+  ],
+  "locations": [
+    {
+      "id": 1,
+      "name": "Scotland",
+      "city": "Glasgow"
+    },
+    {
+      "id": 2,
+      "name": "Peru",
+      "city": "Lima"
+    },
+    {
+      "id": 3,
+      "name": "Mexico",
+      "city": "Mexico City"
+    }
+  ],
+  "owners": [
+    {
+      "name": "Luke",
+      "dog": "esky",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "name": "Andrew",
+      "dog": "esky"
+    },
+    {
+      "id": 3,
+      "name": "Andrew",
+      "dog": "esky"
+    },
+    {
+      "id": 4,
+      "name": "Andrew",
+      "dog": "esky"
+    },
+    {
+      "name": "Dynamo Dan",
+      "dog": "Dingo",
+      "id": 5
+    }
+  ]
 }

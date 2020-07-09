@@ -6,6 +6,14 @@ const remoteURL = "http://localhost:8088"
   },
   getAll() {
     return fetch(`${remoteURL}/animals`).then(result => result.json())
+  },
+  delete(id){
+      return fetch(`${remoteURL}/animals/${id}`, {
+          method:"DELETE",
+          headers:{
+              "Content-Types":"application/json"
+          }
+      })
   }
 }
 

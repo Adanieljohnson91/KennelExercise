@@ -1,5 +1,6 @@
 import React from "react";
-import dog from "../../pitcures/dog.svg"
+import dog from "../../pitcures/dog.svg";
+import "./Animal.css";
 
 const AnimalCard = (props) => {
   return (
@@ -9,9 +10,9 @@ const AnimalCard = (props) => {
           <img src={dog} alt="My Dog" />
         </picture>
         <h3>
-          Name: <span className="card-petname">{props.name}</span>
+          Name: <span className="card-petname">{props.animal.name}</span>
         </h3>
-  <p>{props.breed}</p>
+  <p>{props.animal.breed}</p>
       </div>
     </div>
   );
