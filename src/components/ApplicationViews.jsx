@@ -2,7 +2,7 @@ import { Route } from "react-router-dom";
 import React from "react";
 import Home from "./home/Home";
 import AnimalList from "./animal/AnimalList";
-//only include these once they are built - previous practice exercise
+import AnimalDetail from "./animal/AnimalDetail"
 import LocationList from "./Location/LocationList";
 import EmployeeList from "./Employee/EmployeeList";
 import OwnerList from "./Owner/OwnerList";
@@ -24,6 +24,10 @@ const ApplicationViews = () => {
           return <AnimalList props={props}/>;
         }}
       />
+      <Route path="/animals/:animalId(\d+)" render={(props) => {
+  return <AnimalDetail animalId={parseInt(props.match.params.animalId)}/>
+}} />
+
       <Route
       exact 
       path="/location"
