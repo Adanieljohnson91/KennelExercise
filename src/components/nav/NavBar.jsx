@@ -2,9 +2,23 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./NavBar.css";
 
-const NavBar = () => {
+
+
+const NavBar = (props) => {
+  const logOut = (e) =>{
+    sessionStorage.credentials = null;
+    console.log("clicked", sessionStorage.credentials)
+    sessionStorage.clear();
+    console.log(props, "nav props")
+   
+  }
   return (
     <header>
+    {sessionStorage.credentials === null ? "" : 
+    <Link className="nav-link" to="/">
+    <button onClick={logOut}>Log Out</button>
+    </Link>
+    }
       <h1 className="site-title">
         Student Kennels
         <br />

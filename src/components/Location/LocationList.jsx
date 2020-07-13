@@ -10,7 +10,7 @@ const LocationList = () =>{
     }
     useEffect(()=>{
         getLocations();
-    }, locations);
+    }, []);
     return (
         <>
         <div>

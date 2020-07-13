@@ -35,6 +35,8 @@ const remoteURL = "http://localhost:8088"
         },
         body: JSON.stringify(data)
       })
+      .then(res=>console.log(res, "Success"))
+      .catch(err=>console.log(err, "Error"))
   }
 }
 

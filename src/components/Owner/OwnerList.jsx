@@ -6,7 +6,7 @@ import OwnerForm from './OwnerForm';
 
 
 
-const OwnerList = ()=>{
+const OwnerList = (props)=>{
     const [owners, setOwners] = useState([]);
     const getOwners = async () =>{
         setOwners(await OwnerManager.getAll());
@@ -25,9 +25,10 @@ const OwnerList = ()=>{
         setOwners(await OwnerManager.getAll());
     }
     useEffect(()=>{
+       
             getOwners();
             console.log("useEffect") 
-    },[]);
+    },[props.match]);
     return(
         <>
         <OwnerForm add={addOwner}/>

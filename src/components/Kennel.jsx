@@ -4,10 +4,10 @@ import ApplicationViews from "./ApplicationViews";
 
 import "./Kennel.css";
 
-const Kennel = () => {
+const Kennel = (props) => {
   return (
     <>
-      <NavBar />
+      <NavBar {...props}/>
       <ApplicationViews />
     </>
   );

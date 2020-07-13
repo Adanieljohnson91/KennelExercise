@@ -1,4 +1,5 @@
 import React, { useState} from 'react';
+import {Link} from "react-router-dom";
 
 const OwnerCard = (props) =>{
   const [edit, setEdit] = useState(false);
@@ -36,6 +37,9 @@ const OwnerCard = (props) =>{
       </p>
       <button type="button" onClick={deleteCard}>Delete</button>
       <button type="button" onClick={editButton}>Edit</button>
+      <Link to={`/owners/${props.owner.id}`}>
+  <button>Details</button>
+     </Link>
     </div>
   </div>
 
