@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import OwnerCard from "./OwnerCard";
 import OwnerManager from "../../modules/OwnerManager";
 import OwnerForm from './OwnerForm';
+import RequireAuth from "../auth/RequireAuth";
 
 
 
@@ -41,4 +42,4 @@ const OwnerList = (props)=>{
 
 
 }
-export default OwnerList;
+export default RequireAuth(OwnerList);

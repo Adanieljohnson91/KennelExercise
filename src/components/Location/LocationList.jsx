@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import LocationCard from "./LocationCard";
 import LocationManager from "../../modules/LocationManager";
+import RequireAuth from "../auth/RequireAuth";
 
 const LocationList = () =>{
     //Use State is setting default
@@ -21,4 +22,4 @@ const LocationList = () =>{
         </>
     )
 }
-export default LocationList;
+export default RequireAuth(LocationList);

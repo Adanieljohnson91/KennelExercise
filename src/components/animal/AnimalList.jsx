@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import AnimalManager from "../../modules/AnimalManager";
 import AnimalCard from './AnimalCard';
 import AnimalForm from './AnimalForm';
+import RequireAuth from "../auth/RequireAuth";
 
 
 
@@ -39,5 +40,6 @@ return (
   );
 
 }
-export default AnimalList;
+
+export default RequireAuth(AnimalList);
 

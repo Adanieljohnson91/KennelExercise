@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import EmployeeManager from '../../modules/EmployeeManager';
 import EmployeeCard from './EmployeeCard';
 import EmployeeForm from "./EmployeeForm";
-
+import RequireAuth from "../auth/RequireAuth";
 const EmployeeList = () =>{
     const [employees, setEmployee] = useState([]);
     const getEmployees = async () =>{
@@ -20,4 +20,4 @@ const EmployeeList = () =>{
         </>
     )
 }
-export default EmployeeList;
+export default RequireAuth(EmployeeList);

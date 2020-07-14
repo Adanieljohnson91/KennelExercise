@@ -51,6 +51,8 @@
   ],
   "employees": [
     {
+      "name": "FIrst Name",
+      "job": "Last Name",
       "id": 1
     },
     {
@@ -108,7 +110,7 @@
   ],
   "owners": [
     {
-      "name": "Luk",
+      "name": "Luke",
       "dog": "Kildo",
       "id": 7
     },
